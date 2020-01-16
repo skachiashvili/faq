@@ -1,0 +1,72 @@
+.container {
+  width: 650px;
+  margin: 0;
+  overflow: hidden;
+
+}
+a{text-decoration: none}
+.faq-accordion>li  {
+  border-top: 1px solid rgba(198, 198, 198, 0.4);
+  color: #666;
+  padding: 0.325em;
+}
+
+.faq-accordion li a {
+  color: #666;
+  padding: 1.125em;
+}
+
+.faq-accordion > li:last-child {
+  border-bottom: 1px solid rgba(198, 198, 198, 0.4);
+}
+
+.faq-accordion > li > a:before {
+  padding-right: 0.313em
+}
+
+.faq-accordion > li > a:after {
+  color: #a21e21;
+  content: '+';
+  float: right;
+  font-weight:700;
+  margin-right: 1.25em;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  overflow-y: hidden;
+}
+
+.faq-accordion > li > a.expanded:after {
+  color:  #a21e21;
+  content: '\2212';
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+
+.faq-accordion > li > a.expanded {font-weight: 700; opacity: 1 !important}
+
+
+
+.faq-content p:before {
+  color: #ff8300;
+  float: left;
+  font-weight: 700;
+  margin-right: .5em
+}
+
+.faq-content p {
+  margin: 0 1.2em;
+  padding: 1.250em 0
+
+}
+
+.faq-hide {display: none}
+
+.faq-selected {
+  color: #49494b!important;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
